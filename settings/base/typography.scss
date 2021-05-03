@@ -1,0 +1,65 @@
+/* General tipografía*/
+body {
+  font-family: $font-1;
+  font-size: $text-base;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-2;
+  font-weight: 700;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p, a, i, li, small {
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Escala tipográfica*/
+.display-jumbo {
+  font-size: $display-jumbo;
+  font-family: $font-2;
+}
+
+.display-big {
+  font-size: $display-big;
+  font-family: $font-2;
+}
+
+.display-base {
+  font-size: $display-base;
+  font-family: $font-2;
+}
+
+.text-headline {
+  font-size: $text-headline;
+  font-family: $font-2;
+}
+
+.text-title {
+  font-size: $text-title;
+  font-family: $font-2;
+}
+
+.text-subtitle{
+  font-size: $text-title-sm;
+}
+
+.text-subheader {
+  font-size: $text-subheader;
+}
+
+.text-body-lg{
+  font-size: $text-base-lg;
+}
+
+.text-body {
+  font-size: $text-base;
+}
+
+.text-caption {
+  font-size: $text-caption;
+}

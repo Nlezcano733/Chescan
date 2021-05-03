@@ -1,0 +1,8 @@
+// Aca se van a importar todos los archivos scss para crear un solo archivo css
+
+@import './variables.scss';
+@import './mixins.scss';
+@import './components.scss';
+
+//Paginas
+@import './pages/index.scss';

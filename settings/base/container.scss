@@ -1,0 +1,94 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  max-width: calc($maxwidth - $container-padding);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container-sm{
+  padding-left: calc($container-padding * 1.5);
+  padding-right: calc($container-padding * 1.5);
+  max-width: calc($maxwidth) - ($container-padding * 1.5);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container-xs{
+  padding-left: calc($container-padding * 2);
+  padding-right: calc($container-padding * 2);
+  max-width: calc($maxwidth) - ($container-padding * 2);
+  max-width: $maxwidth;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container-xxs{
+  padding-left: calc($container-padding * 3);
+  padding-right: calc($container-padding * 3);
+  max-width: calc($maxwidth) - ($container-padding * 3);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Size: md */
+@media (max-width: 900px) {
+  .container, .container-sm{
+    padding-left: calc($container-padding * 0.7);
+    padding-right: calc($container-padding * 0.7);
+  }
+  .container-xs{
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+  }
+  .container-xxs{
+    padding-left: calc($container-padding * 1.5);
+    padding-right: calc($container-padding * 1.5);
+  }
+}
+
+/* Size: sm */
+@media (max-width: 700px) {
+  .container, .container-sm{
+    padding-left: calc($container-padding * 0.5);
+    padding-right: calc($container-padding * 0.5);
+  }
+  .container-xs{
+    padding-left: calc($container-padding * 0.7);
+    padding-right: calc($container-padding * 0.7);
+  }
+  .container-xxs{
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+  }
+}
+
+/* Size: xs */
+@media (max-width: 500px) {
+  .container, .container-sm, .container-xs{
+    padding-left: calc($container-padding * 0.5);
+    padding-right: calc($container-padding * 0.5);
+  }
+  .container-xxs{
+    padding-left: calc($container-padding * 0.7);
+    padding-right: calc($container-padding * 0.7);
+  }
+}
+
+/* Size: xxs */
+@media (max-width: 300px) {
+  .container, .container-sm, .container-xs, .container-xxs{
+    padding-left: calc($container-padding * 0.5);
+    padding-right: calc($container-padding * 0.5);
+  }
+}

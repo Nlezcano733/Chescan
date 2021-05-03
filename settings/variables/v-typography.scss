@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@600;700&display=swap');
+
+$font-1: Lato, sans-serif;
+$font-2: Raleway, sans-serif;
+
+//Cambiar fuentes en base a las que se usan en el proyecto
+
+/* Variables tipográficas*/
+$text-caption: 14px;
+$text-base: 16px;
+$text-base-lg: 18px;
+$text-subheader: 20px;
+$text-title-sm: 24px;
+$text-title: 28px;
+$text-headline: 34px;
+
+$display-base: 56px;
+$display-big: 72px;
+$display-jumbo: 96px;
+
+@media (max-width: 900px) {
+    $text-caption: 12px;
+    $text-base: 14px;
+    $text-base-lg: 16px;
+    $text-subheader: 18px;
+    $text-title-sm: 22px;
+    $text-title: 26px;
+    $text-headline: 30px;
+
+    $display-base: 50px;
+    $display-big: 64px;
+    $display-jumbo: 80px;
+}
