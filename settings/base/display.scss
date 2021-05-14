@@ -1,144 +1,68 @@
-.d-grid {
-  display: grid;
-  grid-template-columns: $grid-main;
-  grid-auto-rows: min-content;
-  grid-gap: 0 30px;
-}
-
-.d-flex-row{
+.flex-row{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.d-flex-col{
+.flex-col{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
-.d-block{
-    display: block;
-}
-.d-inline-block{
-    display: inline-block;
-}
-.d-inline{
-    display: inline;
-}
-.d-none{
-    display: none;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 0 10px;
 }
 
-
-.justify-start{
-    justify-content: flex-start;
-}
-.justify-end{
-    justify-content: flex-end;
-}
-.justify-center{
-    justify-content: center;
-}
-.justify-around{
-    justify-content: space-around;
-}
-.justify-between{
-    justify-content: space-between;
-}
-.justify-evenly{
-    justify-content: space-evenly;
-}
+.block{ display: block; }
+.inline-block{ display: inline-block; }
+.inline{ display: inline; }
+.hidden{ display: none; }
 
 
-.align-start{
-    align-items: flex-start;
-}
-.align-end{
-    align-items: flex-end;
-}
-.align-center{
-    align-items: center;
-}
-.align-base{
-    align-items: baseline;
-}
+.justify-start{ justify-content: flex-start; }
+.justify-end{ justify-content: flex-end; }
+.justify-center{ justify-content: center; }
+.justify-around{ justify-content: space-around; }
+.justify-between{ justify-content: space-between; }
+.justify-evenly{ justify-content: space-evenly; }
 
-/* Size: md */
-@media (max-width: $display-md) {
-    .d-grid{
-        grid-template-columns: repeat(10, minmax(0, 1fr));
-        grid-gap: 20px;
-    }
-    .d-md-none{
-        display: none !important;
-    }
-    .d-md-block{
-        display: block !important;
-    }
-    .d-md-inline{
-        display: inline !important;
-    }
-    .d-md-inline-block{
-        display: inline-block !important;
-    }
-}
 
-/* Size: sm */
-@media (max-width: $display-sm) {
-    .d-grid{
-        grid-template-columns: repeat(8, minmax(0, 1fr));
+.align-start{ align-items: flex-start; }
+.align-end{ align-items: flex-end; }
+.align-center{ align-items: center; }
+.align-base{ align-items: baseline; }
+
+@media (min-width: $display-xs) {
+    .grid{ 
+        grid-template-columns: repeat(6, 1fr);
         grid-gap: 15px; 
     }
-    .d-sm-none{
-        display: none !important;
-    }
-    .d-sm-block{
-        display: block !important;
-    }
-    .d-sm-inline{
-        display: inline !important;
-    }
-    .d-sm-inline-block{
-        display: inline-block !important;
-    }
+    .xs-hidden{ display: none !important; }
+    .xs-block{ display: block !important; }
+    .xs-inline{ display: inline !important; }
+    .xs-inline-block{ display: inline-block !important; }
 }
 
-/* Size: xs */
-@media (max-width: $display-xs) {
-    .d-grid{
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-gap: 10px;
+@media (min-width: $display-sm) {
+    .grid{ 
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 20px; 
     }
-    .d-xs-none{
-        display: none !important;
-    }
-    .d-xs-block{
-        display: block !important;
-    }
-    .d-xs-inline{
-        display: inline !important;
-    }
-    .d-xs-inline-block{
-        display: inline-block !important;
-    }
+    .sm-hidden{ display: none !important; }
+    .sm-block{ display: block !important; }
+    .sm-inline{ display: inline !important; }
+    .sm-inline-block{ display: inline-block !important; }
 }
 
-/* Size: xxs */
-@media (max-width: $display-xxs) {
-    .d-grid{
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        grid-gap: 10px;
+@media (min-width: $display-md) {
+    .grid{
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px; 
     }
-    .d-xxs-none{
-        display: none !important;
-    }
-    .d-xxs-block{
-        display: block !important;
-    }
-    .d-xxs-inline{
-        display: inline !important;
-    }
-    .d-xxs-inline-block{
-        display: inline-block !important;
-    }
+    .md-hidden{ display: none !important; }
+    .md-block{ display: block !important; }
+    .md-inline{ display: inline !important; }
+    .md-inline-block{ display: inline-block !important; }
 }

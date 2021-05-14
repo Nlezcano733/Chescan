@@ -1,3 +1,20 @@
+@mixin phone-screen{
+    @media (min-width: $display-xs){ @content; }
+}
+@mixin tablet-screen{
+    @media (min-width: $display-sm){ @content; }
+}
+@mixin desk-screen{
+    @media (min-width: $display-md){ @content; }
+}
+@mixin desk-lg-screen{
+    @media (min-width: $display-md){ @content; }
+}
+
+// -------------------------------------- //
+// -------------------------------------- //
+// -------------------------------------- //
+
 @mixin flex($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;

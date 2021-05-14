@@ -20,7 +20,7 @@ const slider = () =>{
     $('.dogs-gallery').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 1,
         responsive: [
             {
             breakpoint: 768,
@@ -28,7 +28,7 @@ const slider = () =>{
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 1
             }
             },
             {

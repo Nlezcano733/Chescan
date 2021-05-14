@@ -5,7 +5,7 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
+.container, .container-sm, .container-xs, .container-xxs{
   padding-left: $container-padding;
   padding-right: $container-padding;
   max-width: calc($maxwidth - $container-padding);
@@ -14,82 +14,60 @@ body {
   width: 100%;
 }
 
-.container-sm{
-  padding-left: calc($container-padding * 1.5);
-  padding-right: calc($container-padding * 1.5);
-  max-width: calc($maxwidth) - ($container-padding * 1.5);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
 
-.container-xs{
-  padding-left: calc($container-padding * 2);
-  padding-right: calc($container-padding * 2);
-  max-width: calc($maxwidth) - ($container-padding * 2);
-  max-width: $maxwidth;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.container-xxs{
-  padding-left: calc($container-padding * 3);
-  padding-right: calc($container-padding * 3);
-  max-width: calc($maxwidth) - ($container-padding * 3);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-/* Size: md */
-@media (max-width: 900px) {
-  .container, .container-sm{
-    padding-left: calc($container-padding * 0.7);
-    padding-right: calc($container-padding * 0.7);
-  }
-  .container-xs{
-    padding-left: $container-padding;
-    padding-right: $container-padding;
-  }
+@media (min-width: $display-xs) {
   .container-xxs{
+    max-width: calc($maxwidth - ($container-padding * 1.2));
+    padding-left: calc($container-padding * 1.2);
+    padding-right: calc($container-padding * 1.2);
+  }
+}
+
+@media (min-width: $display-sm){
+  .container-xxs{
+    max-width: calc($maxwidth - ($container-padding * 1.5));
     padding-left: calc($container-padding * 1.5);
     padding-right: calc($container-padding * 1.5);
   }
+  .container-xs{
+    max-width: calc($maxwidth - ($container-padding * 1.2));
+    padding-left: calc($container-padding * 1.2);
+    padding-right: calc($container-padding * 1.2);
+  }
 }
 
-/* Size: sm */
-@media (max-width: 700px) {
-  .container, .container-sm{
-    padding-left: calc($container-padding * 0.5);
-    padding-right: calc($container-padding * 0.5);
+@media (min-width: $display-md){
+  .container-xxs{
+    max-width: calc($maxwidth - ($container-padding * 2));
+    padding-left: calc($container-padding * 2);
+    padding-right: calc($container-padding * 2);
   }
   .container-xs{
-    padding-left: calc($container-padding * 0.7);
-    padding-right: calc($container-padding * 0.7);
+    max-width: calc($maxwidth - ($container-padding * 1.5));
+    padding-left: calc($container-padding * 1.5);
+    padding-right: calc($container-padding * 1.5);
   }
-  .container-xxs{
-    padding-left: $container-padding;
-    padding-right: $container-padding;
-  }
-}
-
-/* Size: xs */
-@media (max-width: 500px) {
-  .container, .container-sm, .container-xs{
-    padding-left: calc($container-padding * 0.5);
-    padding-right: calc($container-padding * 0.5);
-  }
-  .container-xxs{
-    padding-left: calc($container-padding * 0.7);
-    padding-right: calc($container-padding * 0.7);
+  .container-sm{
+    max-width: calc($maxwidth - ($container-padding * 1.2));
+    padding-left: calc($container-padding * 1.2);
+    padding-right: calc($container-padding * 1.2);
   }
 }
 
-/* Size: xxs */
-@media (max-width: 360px) {
-  .container, .container-sm, .container-xs, .container-xxs{
-    padding-left: calc($container-padding * 0.5);
-    padding-right: calc($container-padding * 0.5);
+@media (min-width: $display-lg){
+  .container-xxs{
+    max-width: calc($maxwidth - ($container-padding * 3));
+    padding-left: calc($container-padding * 3);
+    padding-right: calc($container-padding * 3);
+  }
+  .container-xs{
+    max-width: calc($maxwidth - ($container-padding * 1.5));
+    padding-left: calc($container-padding * 1.5);
+    padding-right: calc($container-padding * 1.5);
+  }
+  .container-sm{
+    max-width: calc($maxwidth - ($container-padding * 1.2));
+    padding-left: calc($container-padding * 1.2);
+    padding-right: calc($container-padding * 1.2);
   }
 }

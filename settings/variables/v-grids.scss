@@ -1,40 +1,33 @@
-$display-md: 960px;
+$display-xs: 400px;
 $display-sm: 740px;
-$display-xs: 520px;
-$display-xxs: 365px;
+$display-md: 960px;
+$display-lg: 1200px;
 
-/* Default - Desktop */
-/* --maxwidth: 1440px; */
+$grid-main: repeat(4, minmax(0, 1fr));
+$grid-gap: 10px;
+$container-padding: 10px;
 $maxwidth: calc(100vw - 30px);
-$grid-main: repeat(12, minmax(0, 1fr));
-$grid-gap: 30px;
-$container-padding: 30px;
 
-/* Size: md */
-@media (max-width: $display-md) {
-    $maxwidth: calc(100vw - 12px);
-    $grid-main: repeat(10, minmax(0, 1fr));
-    $grid-gap: 20px;
-}
-
-/* Size: sm */
-@media (max-width: $display-sm) {
-    $maxwidth: 100vw;
-    $grid-main: repeat(8, minmax(0, 1fr));
-    $grid-gap: 15px;
-    $container-padding: 15px;
-}
-
-/* Size: xs */
-@media (max-width: $display-xs) {
+@media (min-width: $display-xs) {
     $grid-main: repeat(6, minmax(0, 1fr));
     $grid-gap: 10px;
     $container-padding: 10px;
 }
 
-/* Size: xxs */
-@media (max-width: $display-xxs) {
-    $grid-main: repeat(4, minmax(0, 1fr));
-    $grid-gap: 10px;
-    $container-padding: 10px;
+@media (min-width: $display-sm) {
+    $grid-main: repeat(8, minmax(0, 1fr));
+    $grid-gap: 15px;
+    $container-padding: 15px;
+}
+
+@media (min-width: $display-md) {
+    $grid-main: repeat(12, minmax(0, 1fr));
+    $grid-gap: 30px;
+    $container-padding: 30px;
+}
+
+@media (min-width: $display-lg){
+    $container-padding: 35px;
+    $grid-gap: 35px;
+    $maxwidth: 1200px;
 }

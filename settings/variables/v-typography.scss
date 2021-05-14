@@ -3,31 +3,30 @@
 $font-1: Lato, sans-serif;
 $font-2: Raleway, sans-serif;
 
-//Cambiar fuentes en base a las que se usan en el proyecto
-
 /* Variables tipográficas*/
-$text-caption: 14px;
-$text-base: 16px;
-$text-base-lg: 18px;
-$text-subheader: 20px;
-$text-title-sm: 24px;
-$text-title: 28px;
-$text-headline: 34px;
 
-$display-base: 56px;
-$display-big: 72px;
-$display-jumbo: 96px;
+$text-caption: 12px;
+$text-base: 14px;
+$text-base-lg: 16px;
+$text-subheader: 18px;
+$text-title-sm: 22px;
+$text-title: 26px;
+$text-headline: 30px;
 
-@media (max-width: $display-md) {
-    $text-caption: 12px;
-    $text-base: 14px;
-    $text-base-lg: 16px;
-    $text-subheader: 18px;
-    $text-title-sm: 22px;
-    $text-title: 26px;
-    $text-headline: 30px;
+$display-base: 50px;
+$display-big: 64px;
+$display-jumbo: 80px;
 
-    $display-base: 50px;
-    $display-big: 64px;
-    $display-jumbo: 80px;
+@media (min-width: $display-xs) {
+    $text-caption: 14px;
+    $text-base: 16px;
+    $text-base-lg: 18px;
+    $text-subheader: 20px;
+    $text-title-sm: 24px;
+    $text-title: 28px;
+    $text-headline: 34px;
+
+    $display-base: 56px;
+    $display-big: 72px;
+    $display-jumbo: 96px;
 }
