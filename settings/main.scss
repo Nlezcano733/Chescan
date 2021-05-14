@@ -1,6 +1,6 @@
 /*VARIABLES*/
-@import './variables/v-typography.scss';
 @import './variables/v-grids.scss';
+@import './variables/v-typography.scss';
 @import './variables/v-colors.scss';
 
 /*SETTINGS*/
@@ -8,6 +8,6 @@
 @import './base/typography.scss';
 @import './base/colors.scss';
 
-@import 'base/display.css';
-@import 'base/grid-cols.css';
-@import 'base/container.css';
+@import './base/display.scss';
+@import './base/grid-cols.scss';
+@import './base/container.scss';

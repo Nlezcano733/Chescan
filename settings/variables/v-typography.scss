@@ -18,7 +18,7 @@ $display-base: 56px;
 $display-big: 72px;
 $display-jumbo: 96px;
 
-@media (max-width: 900px) {
+@media (max-width: $display-md) {
     $text-caption: 12px;
     $text-base: 14px;
     $text-base-lg: 16px;

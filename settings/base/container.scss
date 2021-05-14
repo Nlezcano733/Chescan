@@ -1,3 +1,4 @@
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -86,7 +87,7 @@ body {
 }
 
 /* Size: xxs */
-@media (max-width: 300px) {
+@media (max-width: 360px) {
   .container, .container-sm, .container-xs, .container-xxs{
     padding-left: calc($container-padding * 0.5);
     padding-right: calc($container-padding * 0.5);

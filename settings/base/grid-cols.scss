@@ -30,7 +30,7 @@
 
 
 /* Grid cols md (10 columns): <900 */
-@media (max-width: 900px) {
+@media (max-width: $display-md) {
 
   .col-md-1 { grid-column: span 1; }
   .col-md-2 { grid-column: span 2; }
@@ -53,7 +53,7 @@
 }
 
 /* Grid cols sm (8 columns): <700 */
-@media (max-width: 700px) {
+@media (max-width: $display-sm) {
 
   .col-sm-1 { grid-column: span 1; }
   .col-sm-2 { grid-column: span 2; }
@@ -75,7 +75,7 @@
 }
 
 /* Grid cols xs (6 columns): <500 */
-@media (max-width: 500px) {
+@media (max-width: $display-xs) {
 
   .col-xs-1 { grid-column: span 1; }
   .col-xs-2 { grid-column: span 2; }
@@ -90,7 +90,7 @@
 }
 
 /* Grid cols xxs (4 columns): <320 */
-@media (max-width: 320px) {
+@media (max-width: $display-xxs) {
   .col-xxs-1 { grid-column: span 1; }
   .col-xxs-2 { grid-column: span 2; }
   .col-xxs-3 { grid-column: span 3; }

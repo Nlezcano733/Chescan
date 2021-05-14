@@ -64,7 +64,7 @@
 }
 
 /* Size: md */
-@media (max-width: 900px) {
+@media (max-width: $display-md) {
     .d-grid{
         grid-template-columns: repeat(10, minmax(0, 1fr));
         grid-gap: 20px;
@@ -84,7 +84,7 @@
 }
 
 /* Size: sm */
-@media (max-width: 700px) {
+@media (max-width: $display-sm) {
     .d-grid{
         grid-template-columns: repeat(8, minmax(0, 1fr));
         grid-gap: 15px; 
@@ -104,7 +104,7 @@
 }
 
 /* Size: xs */
-@media (max-width: 500px) {
+@media (max-width: $display-xs) {
     .d-grid{
         grid-template-columns: repeat(6, minmax(0, 1fr));
         grid-gap: 10px;
@@ -124,7 +124,7 @@
 }
 
 /* Size: xxs */
-@media (max-width: 320px) {
+@media (max-width: $display-xxs) {
     .d-grid{
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-gap: 10px;

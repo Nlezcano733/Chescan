@@ -1,18 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./js/libraries/slick/slick.css" />
+    <link rel="stylesheet" href="./js/libraries/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/bd03cec16f.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar container bg-gray-600 white">
+            <a id="navbar__menu"><i class="fas fa-bars"></i></a>
+            <a href="https://placeholder.com" id="navbar__logo"><img src="https://via.placeholder.com/60" /></a>
+        </div>
+        <div class="sidebar container">
+            <div class="sidebar__nav bg-gray-600 white">
+                <div class="redes">
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a><i class="fab fa-whatsapp"></i></a>
+                    <a><i class="fab fa-instagram"></i></a>
+                </div>
+                <i class="fas fa-times" id="sidebar__close"></i>
+            </div>
+            <nav class="enlaces">
+                <a href="#" class="text-subtitle">Home</a>
+                <a href="#" class="text-subtitle">¿Qué es BARF?</a>
+                <a href="#" class="text-subtitle">Sobre Chester</a>
+                <a href="#" class="text-subtitle">Información para primerizos</a>
+                <a href="#" class="text-subtitle">Arma el plan para tu mascota</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="hero bg-gray-400"></div>
+        <section class="container d-grid">
+            <article class="introProd col-2 bg-gray-300">
+                <h2 class="introProd-title text-body">Titulo de producto 1</h2>
+                <p class="introProd-text text-caption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                    minima? Eaque eum impedit nihil ut modi nisi.
+                </p>
+                <button class="btn introProd-btn">Conócelo</button>
+            </article>
+            <article class="introProd col-2 bg-gray-300">
+                <h2 class="introProd-title text-body">Titulo de producto 1</h2>
+                <p class="introProd-text text-caption">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                    minima? Eaque eum impedit nihil ut modi nisi.
+                </p>
+                <button class="btn introProd-btn">Conócelo</button>
+            </article>
+        </section>
+        <section>
+            <h2 class="text-center">Arma el plan para tu mascota</h2>
+            <div class="img-plan bg-gray-400"></div>
+            <p class="container text-caption">Unas lineas sobre la calculadora, su funcionamiento o importancia.</p>
+        </section>
+        <section class="cond container">
+            <h3>Te lo llevamos a tu casa</h3>
+            <div>
+                <p class="cond-items">
+                    <i class="far fa-calendar-alt "></i>
+                    Repartimos todos los miercoles y viernes
+                </p>
+                <p class="cond-items">
+                    <i class="fas fa-piggy-bank "></i>
+                    Envós gratis en ordenes mayores a S/50 en zonas seleccionadas
+                </p>
+                <p class="cond-items">
+                    <i class="fas fa-comment "></i>
+                    Si no vives en alguna de esas zonas contactanos para conocer el costo de envío
+                </p>
+                <iframe class="cond-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62432.636621551435!2d-77.0552044!3d-12.0407818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2zTGltYSwgUGVyw7o!5e0!3m2!1ses!2sar!4v1620946492692!5m2!1ses!2sar" width="350" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <section class="beneficts d-grid container">
+            <h3 class="col-full text-center text-body">Beneficios</h3>
+
+            <div class="beneficts-card col-2">
+                <div class="beneficts-img bg-gray-400"></div>
+                <h4 class="beneficts-title">Título</h4>
+            </div>
+            <div class="beneficts-card col-2">
+                <div class="beneficts-img bg-gray-400"></div>
+                <h4 class="beneficts-title">Título</h4>
+            </div>
+            <div class="beneficts-card col-2">
+                <div class="beneficts-img bg-gray-400"></div>
+                <h4 class="beneficts-title">Título</h4>
+            </div>
+            <div class="beneficts-card col-2">
+                <div class="beneficts-img bg-gray-400"></div>
+                <h4 class="beneficts-title">Título</h4>
+            </div>
+
+        </section>
+        <section class="dogs container">
+            <h3 class="dogs-title">Nuestra manada</h3>
+            <div class="dogs-gallery">
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/IMG_20200831_114550_151.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/Mufasa bolsa pollo 3.jpeg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/20210403_140613.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/IMG_20200831_114550_151.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/Mufasa bolsa pollo 3.jpeg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/20210403_140613.jpg" alt="prueba"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-600 white">
+        <p>Siguenos en nuestras redes</p>
+        <div class="redes">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-whatsapp"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
     <script src="js/libraries/jquery-3.5.1.min.js"></script>
+    <script src="js/libraries/slick/slick.min.js"></script>
+    <script src="js/general.js"></script>
     <script src="js/index/dom.js"></script>
     <script src="js/index/function.js"></script>
     <script src="js/index/main.js"></script>
 </body>
+
 </html>
