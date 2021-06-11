@@ -1,3 +1,4 @@
+
 .redes{
     width: fit-content;
     a{
@@ -9,21 +10,26 @@
 }
 
 header{
-    position: relative;
-}
-.navbar{
     position: sticky;
     top: 0px;
+    z-index: 1000;
+}
+
+.navbar{
     height: 56px;
     padding: 0px 16px;
-    display: flex;
-    align-items: center;
+    @include flex (row, space-between, center);
 
     #navbar__menu{
         padding-top: 10px;
         font-size: 24px;
+        padding-right: 40px;
     }
-    #navbar__logo{
+    .navbar__title{
+        font-size: $text-subheader;
+    }
+
+    #navbar__mainLogo{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -39,7 +45,8 @@ header{
     width: 100%;
     max-width: 100vw;
     padding: 0px;
-    z-index: 999;
+    z-index: 3000;
+    background-color: #f6f6f6;
 
 
     .sidebar__nav{
@@ -81,29 +88,102 @@ header{
     }
 }
 main{
-    height: calc(100vh - 56px - 63px);
     margin: 0px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
+}
+
+section{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 footer{
-    position: fixed;
-    bottom: 1px;
+    @include flex (row, space-between, center);
     height: 63px;
     width: 100%;
     padding: 0px 16px;
     z-index: 10;
-
-    @include flex (row, space-between, center);
 }
-
-// ---------------------------------------------------------//
-// ---------------------------------------------------------//
-// ---------------------------------------------------------//
 
 .btn{
     background-color: transparent;
     border: none;
     outline: transparent;
+}
+
+@include phone-screen {
+    section{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+@include tablet-screen {
+    section{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+@include desk-screen {
+    .navbar{
+        position: sticky;
+        top: 0px;
+        height: 64px;
+
+        #navbar__logo{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .sidebar{
+        position: fixed;
+        width: 30%;
+        z-index: 10000;
+
+        .sidebar__nav{
+            position: absolute;
+            top: 0px;
+            height: 64px;
+
+            #sidebar__close{
+                position: absolute;
+                left: 45%;
+                top: 12px;
+                font-size: $text-title;
+                animation: moveCloseBtn 0.5s ease-out 0s;
+            }
+
+            @keyframes moveCloseBtn {
+                from{
+                    transform: translateX(0px);
+                } to{
+                    transform: translateX(-10vw);
+                }
+            }
+        }
+
+        .enlaces{
+            margin-top: 70px;
+        }
+    }
+    
+    section{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    footer{
+        padding-left: 14%;
+        padding-right: 14%;
+        font-size: $text-base-lg;
+    }
+
 }

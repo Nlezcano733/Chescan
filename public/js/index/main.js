@@ -1,2 +1,2 @@
 let burguer= $('#navbar__menu').click(sidebarOpen)
-slider()
+slider('.dogs-gallery')

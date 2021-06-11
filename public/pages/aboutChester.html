@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bd03cec16f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-gray-600 white">
+      <div class="navbar container">
+        <a id="navbar__menu"><i class="fas fa-bars"></i></a>
+        <h1 class="navbar__title">Sobre Chester</h2>
+        <a href="https://placeholder.com" id="navbar__logo"
+          ><img src="https://via.placeholder.com/60"
+        /></a>
+      </div>
+      <div class="sidebar container">
+        <div class="sidebar__nav bg-gray-600 white">
+          <div class="redes">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-whatsapp"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+          </div>
+          <i class="fas fa-times" id="sidebar__close"></i>
+        </div>
+        <nav class="enlaces">
+          <a href="../index.html" class="text-subtitle">Home</a>
+          <a href="./aboutBarf.html" class="text-subtitle">¿Qué es BARF?</a>
+          <a href="./aboutChester.html" class="text-subtitle">Sobre Chester</a>
+          <a href="./tutorial.html" class="text-subtitle">Información para primerizos</a>
+          <a href="#" class="text-subtitle">Arma el plan para tu mascota</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container grid">
+      <h2 class="title col-full">Nuestros productos</h2>
+
+      <article class="product col-mid">
+        <div class="product-img bg-gray-300"></div>
+        <h3 class="product-title text-center">Chester clásico de pollo</h3>
+
+        <div class="product-options">
+          <button class="option option-selected" id="clasicoDesc" >Descripción</button>
+          <button class="option" id="clasicoIngred" >Ingredientes</button>
+        </div>
+
+        <p class="product-text" id="classicText">
+            Esta parte de la descripcion sera una prueba en español mas que nada para
+            diferenciarnos de los ingredientes y notar una diferencia a la hora de cambiar
+        </p>
+        <button class="btn product-submit">Comprar</button>
+      </article>
+
+      <article class="product col-mid">
+        <div class="product-img bg-gray-300"></div>
+        <h3 class="product-title text-center">Chester hipoalergénico de pavo</h3>
+        <div class="product-options">
+          <p class="option option-selected" id="pavoDesc">Descripción</p>
+          <p class="option" id="pavoIngred">Ingredientes</p>
+        </div>
+        <p class="product-text" id="pavoText">
+            Prueba de descripcion que debera ser en españo para diferenciarse un  poco
+            de los ingredientes que son en ingles para notar una diferencia en el cambio
+        </p>
+        <button class="btn product-submit">Comprar</button>
+      </article>
+        <div class="information col-mid">
+            <h3 class="information-title">Como se sirven</h3>
+            <p class="information-text">
+            Retirar de la bolsa la cantidad de huesitos a consumir, dejar
+            descongelar y servirlo crudo y a temperatura ambiente.
+            </p>
+        </div>
+        <div class="information col-mid">
+            <h3 class="information-title">Que contienen</h3>
+            <p class="information-text">
+            Las presentaciones son de 800 gramos y contienen 32 unidades en forma
+            de huesitos congelados, ¡listos para servir!
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-600 white">
+      <p>Siguenos en nuestras redes</p>
+      <div class="redes">
+        <a><i class="fab fa-facebook-f"></i></a>
+        <a><i class="fab fa-whatsapp"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="../js/libraries/jquery-3.5.1.min.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/aboutChester/dom.js"></script>
+    <script src="../js/aboutChester/main.js"></script>
+  </body>
+</html>

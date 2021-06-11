@@ -1,0 +1,18 @@
+[
+  {
+    "description": "Curabitur rhoncus tempus leo. Nullam tortor est, blandit sit amet laoreet sed, cursus sit amet ligula. Nam vitae fermentum nisl. Curabitur commodo urna eu felis vulputate blandit. Etiam fermentum at urna a luctus. Nunc id magna dictum, ornare lorem nec, eleifend libero. Fusce vel leo tellus.",
+    "img": "../assets/photo1.jpg"
+  },
+  {
+    "description": "Sed luctus, lorem feugiat fringilla euismod, leo diam ullamcorper tellus, quis lobortis mauris est nec justo. Vivamus at volutpat mauris. Etiam quis ligula porttitor.",
+    "img": "../assets/photo2.jpeg"
+  },
+  {
+    "description": "aliquam neque quis, mattis turpis. Praesent vitae libero at urna luctus mattis. Sed mi tortor, iaculis sed ipsum at, fermentum tempor felis. Sed rutrum velit eget eros dapibus malesuada.",
+    "img": "../assets/photo3.jpg"
+  },
+  {
+    "description": "Sed luctus, lorem feugiat fringilla euismod, mattis turpis. Praesent vitae libero at urna luctus mattis. Sed mi tortor, iaculis sed ipsum at, fermentum tempor felis. Sed rutrum velit eget eros dapibus malesuada.",
+    "img": "../assets/photo1.jpg"
+  }
+]

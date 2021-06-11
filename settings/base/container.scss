@@ -1,73 +1,58 @@
+body{
+  display: block;
+}
+$grid-main: repeat(4, minmax(0, 1fr));
+$maxwidth: 100%;
 
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+@media (max-width: $display-xs){
+  $grid-gap: 10px;
+  $container-padding: 10px;
 }
 
-.container, .container-sm, .container-xs, .container-xxs{
-  padding-left: $container-padding;
-  padding-right: $container-padding;
-  max-width: calc($maxwidth - $container-padding);
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: $display-sm){
+  $grid-gap: 20px !important;
+  $container-padding: 20px !important;
+}
+
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100vw;
+  margin-left: auto !important;
+  margin-right: auto !important;
   width: 100%;
 }
 
-
-@media (min-width: $display-xs) {
-  .container-xxs{
-    max-width: calc($maxwidth - ($container-padding * 1.2));
-    padding-left: calc($container-padding * 1.2);
-    padding-right: calc($container-padding * 1.2);
+@media (min-width: $display-xs){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $display-sm){
-  .container-xxs{
-    max-width: calc($maxwidth - ($container-padding * 1.5));
-    padding-left: calc($container-padding * 1.5);
-    padding-right: calc($container-padding * 1.5);
-  }
-  .container-xs{
-    max-width: calc($maxwidth - ($container-padding * 1.2));
-    padding-left: calc($container-padding * 1.2);
-    padding-right: calc($container-padding * 1.2);
+  .container{
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
-
 @media (min-width: $display-md){
-  .container-xxs{
-    max-width: calc($maxwidth - ($container-padding * 2));
-    padding-left: calc($container-padding * 2);
-    padding-right: calc($container-padding * 2);
+  .container{
+    max-width: 1020px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  .container-xs{
-    max-width: calc($maxwidth - ($container-padding * 1.5));
-    padding-left: calc($container-padding * 1.5);
-    padding-right: calc($container-padding * 1.5);
+  .lg-screen-container{
+    max-width: 1020px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  .container-sm{
-    max-width: calc($maxwidth - ($container-padding * 1.2));
-    padding-left: calc($container-padding * 1.2);
-    padding-right: calc($container-padding * 1.2);
+}
+@media (min-width: $display-lg){
+  .container{
+    max-width: 1020px !important;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
-@media (min-width: $display-lg){
-  .container-xxs{
-    max-width: calc($maxwidth - ($container-padding * 3));
-    padding-left: calc($container-padding * 3);
-    padding-right: calc($container-padding * 3);
-  }
-  .container-xs{
-    max-width: calc($maxwidth - ($container-padding * 1.5));
-    padding-left: calc($container-padding * 1.5);
-    padding-right: calc($container-padding * 1.5);
-  }
-  .container-sm{
-    max-width: calc($maxwidth - ($container-padding * 1.2));
-    padding-left: calc($container-padding * 1.2);
-    padding-right: calc($container-padding * 1.2);
-  }
-}

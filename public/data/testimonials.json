@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Lorem ipsum sit amet, consectetur adipiscing elit.",
+    "img": "../assets/photo1.jpg"
+  },
+  {
+    "title": "Lorem dolor sit amet, consectetur adipiscing elit.",
+    "img": "../assets/photo2.jpeg"
+  },
+  {
+    "title": "Lorem ipsum dolor, consectetur adipiscing elit.",
+    "img": "../assets/photo3.jpg"
+  }
+]

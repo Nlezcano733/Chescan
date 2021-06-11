@@ -1,0 +1,95 @@
+.title{
+    text-align: center;
+    margin-top: 20px
+}
+
+.product{
+    @include flex (column, center, stretch);
+    border-bottom: 1px solid #ccc;
+    display: relative;
+    &-img {
+        height: 150px;
+    }
+    &-options{
+        @include flex(row, center, center);
+        .option{
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0px;
+            margin: 10px 0px;
+            background-color: white;
+            border: 1px solid #ccc;
+            font-weight: 500;
+            text-align: center;
+            font-size: $text-base-lg;
+            z-index: 1;
+
+            &-selected{
+                border-bottom: 2px solid #333;
+            }
+        }
+    }
+    &-submit{
+        @include boton (120px, 45px, #999, #444);
+        align-self: center;
+        margin: 10px;
+        font-size: $text-base-lg;
+    }
+}
+
+.information{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+    &-title{
+        text-align: left;
+    }
+}
+
+
+@include phone-screen {
+    .product {
+        max-width: 550px;
+        justify-self: center;
+        &-img {
+            height: 200px;
+        }
+
+        &-text{
+            height: 75px;
+            font-size: $text-base;
+        }
+
+        &-submit{
+            @include boton (130px, 50px, #999, #444);
+            margin: 20px;
+        }
+    }
+    
+    .information{
+        margin: 0px;
+        max-width: 550px;
+        justify-self: center;
+        text-align: center;
+
+        &-title{
+            text-align: center;
+        }
+
+        &:last-child{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include tablet-screen{
+    .product-text{
+        font-size: $text-base-lg;
+        height: 100px;
+    }
+
+    .information{
+        font-size: $text-base-lg;
+    }
+}

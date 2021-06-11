@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar container bg-gray-600 white">
+    <header class="bg-gray-600 white">
+        <div class="navbar container">
             <a id="navbar__menu"><i class="fas fa-bars"></i></a>
-            <a href="https://placeholder.com" id="navbar__logo"><img src="https://via.placeholder.com/60" /></a>
+            <a href="https://placeholder.com" id="navbar__mainLogo"><img src="https://via.placeholder.com/60" /></a>
         </div>
         <div class="sidebar container">
             <div class="sidebar__nav bg-gray-600 white">
@@ -29,44 +29,48 @@
                 <i class="fas fa-times" id="sidebar__close"></i>
             </div>
             <nav class="enlaces">
-                <a href="#" class="text-subtitle">Home</a>
-                <a href="#" class="text-subtitle">¿Qué es BARF?</a>
-                <a href="#" class="text-subtitle">Sobre Chester</a>
-                <a href="#" class="text-subtitle">Información para primerizos</a>
+                <a href="./index.html" class="text-subtitle">Home</a>
+                <a href="./pages/aboutBarf.html" class="text-subtitle">¿Qué es BARF?</a>
+                <a href="./pages/aboutChester.html" class="text-subtitle">Sobre Chester</a>
+                <a href="./pages/tutorial.html" class="text-subtitle">Información para primerizos</a>
                 <a href="#" class="text-subtitle">Arma el plan para tu mascota</a>
             </nav>
         </div>
     </header>
-    <main id="main">
-        <div class="hero bg-gray-400"></div>
-        <section class="container grid">
-            <article class="introProd col-quarter bg-gray-300">
-                <h2 class="introProd-title text-body">Titulo de producto 1</h2>
-                <p class="introProd-text text-caption">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-                    minima? Eaque eum impedit nihil ut modi nisi.
-                </p>
-                <button class="btn introProd-btn">Conócelo</button>
-            </article>
-            <article class="introProd col-quarter bg-gray-300">
-                <h2 class="introProd-title text-body">Titulo de producto 1</h2>
-                <p class="introProd-text text-caption">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-                    minima? Eaque eum impedit nihil ut modi nisi.
-                </p>
-                <button class="btn introProd-btn">Conócelo</button>
-            </article>
+    <main>
+        <section class="intro">
+            <div class="hero bg-gray-400"></div>
+            <div class="grid container">
+                <article class="introProd col-quarter bg-gray-300">
+                    <h2 class="introProd-title text-body">Titulo de producto 1</h2>
+                    <p class="introProd-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                        minima? Eaque eum impedit nihil ut modi nisi.
+                    </p>
+                    <button class="btn introProd-btn">Conócelo</button>
+                </article>
+                <article class="introProd col-quarter bg-gray-300">
+                    <h2 class="introProd-title text-body">Titulo de producto 1</h2>
+                    <p class="introProd-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                        minima? Eaque eum impedit nihil ut modi nisi.
+                    </p>
+                    <button class="btn introProd-btn">Conócelo</button>
+                </article>
+            </div>
         </section>
-        <section>
-            <h2 class="text-center">Arma el plan para tu mascota</h2>
-            <div class="img-plan bg-gray-400"></div>
-            <p class="container text-caption">Unas lineas sobre la calculadora, su funcionamiento o importancia.</p>
+
+        <section class="plan grid lg-screen-container">
+            <h2 class="plan-title col-full text-center">Arma el plan para tu mascota</h2>
+            <div class="plan-img col-full bg-gray-400"></div>
+            <p class="plan-text container">Unas lineas sobre la calculadora, su funcionamiento o importancia.</p>
         </section>
-        <section class="cond container">
-            <h3>Te lo llevamos a tu casa</h3>
-            <div>
+
+        <section class="cond container grid">
+            <h3 class="cond-title col-full">Te lo llevamos a tu casa</h3>
+            <div class="cond-list col-mid container">
                 <p class="cond-items">
-                    <i class="far fa-calendar-alt "></i>
+                    <i class="far fa-calendar-alt"></i>
                     Repartimos todos los miercoles y viernes
                 </p>
                 <p class="cond-items">
@@ -77,40 +81,41 @@
                     <i class="fas fa-comment "></i>
                     Si no vives en alguna de esas zonas contactanos para conocer el costo de envío
                 </p>
-                <iframe class="cond-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62432.636621551435!2d-77.0552044!3d-12.0407818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2zTGltYSwgUGVyw7o!5e0!3m2!1ses!2sar!4v1620946492692!5m2!1ses!2sar" width="350" loading="lazy">
-                </iframe>
             </div>
+            <iframe class="cond-map col-mid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62432.636621551435!2d-77.0552044!3d-12.0407818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2zTGltYSwgUGVyw7o!5e0!3m2!1ses!2sar!4v1620946492692!5m2!1ses!2sar" width="350" loading="lazy">
+            </iframe>
         </section>
+
         <section class="beneficts container grid">
-            <h3 class="col-full text-center text-body">Beneficios</h3>
+            <h3 class="col-full text-center beneficts-title">Beneficios</h3>
 
             <div class="beneficts-card col-quarter">
-                <div class="beneficts-img bg-gray-400"></div>
-                <h4 class="beneficts-title">Título</h4>
+                <div class="card-img bg-gray-400"></div>
+                <h4 class="card-title">Título</h4>
             </div>
             <div class="beneficts-card col-quarter">
-                <div class="beneficts-img bg-gray-400"></div>
-                <h4 class="beneficts-title">Título</h4>
+                <div class="card-img bg-gray-400"></div>
+                <h4 class="card-title">Título</h4>
             </div>
             <div class="beneficts-card col-quarter">
-                <div class="beneficts-img bg-gray-400"></div>
-                <h4 class="beneficts-title">Título</h4>
+                <div class="card-img bg-gray-400"></div>
+                <h4 class="card-title">Título</h4>
             </div>
             <div class="beneficts-card col-quarter">
-                <div class="beneficts-img bg-gray-400"></div>
-                <h4 class="beneficts-title">Título</h4>
+                <div class="card-img bg-gray-400"></div>
+                <h4 class="card-title">Título</h4>
             </div>
 
         </section>
         <section class="dogs container">
             <h3 class="dogs-title">Nuestra manada</h3>
             <div class="dogs-gallery">
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/IMG_20200831_114550_151.jpg" alt="prueba"></div>
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/Mufasa bolsa pollo 3.jpeg" alt="prueba"></div>
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/20210403_140613.jpg" alt="prueba"></div>
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/IMG_20200831_114550_151.jpg" alt="prueba"></div>
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/Mufasa bolsa pollo 3.jpeg" alt="prueba"></div>
-                <div class="dogs-img"><img class="dogs-imagen" src="./assets/20210403_140613.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo1.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo2.jpeg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo3.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo1.jpg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo2.jpeg" alt="prueba"></div>
+                <div class="dogs-img"><img class="dogs-imagen" src="./assets/photo3.jpg" alt="prueba"></div>
             </div>
         </section>
     </main>
@@ -128,7 +133,6 @@
     <script src="js/libraries/slick/slick.min.js"></script>
     <script src="js/general.js"></script>
     <script src="js/index/dom.js"></script>
-    <script src="js/index/function.js"></script>
     <script src="js/index/main.js"></script>
 </body>
 

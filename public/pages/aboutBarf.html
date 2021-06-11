@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../js/libraries/slick/slick.css" />
+    <link rel="stylesheet" href="../js/libraries/slick/slick-theme.css" />
+    <script
+      src="https://kit.fontawesome.com/bd03cec16f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-gray-600 white">
+      <div class="navbar container">
+        <a id="navbar__menu"><i class="fas fa-bars"></i></a>
+        <h1 class="navbar__title">¿Qué es BARF?</h2>
+        <a href="https://placeholder.com" id="navbar__logo"
+          ><img src="https://via.placeholder.com/60"
+        /></a>
+      </div>
+      <div class="sidebar container">
+        <div class="sidebar__nav bg-gray-600 white">
+          <div class="redes">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-whatsapp"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+          </div>
+          <i class="fas fa-times" id="sidebar__close"></i>
+        </div>
+        <nav class="enlaces">
+          <a href="../index.html" class="text-subtitle">Home</a>
+          <a href="./aboutBarf.html" class="text-subtitle">¿Qué es BARF?</a>
+          <a href="./aboutChester.html" class="text-subtitle">Sobre Chester</a>
+          <a href="./tutorial.html" class="text-subtitle">Información para primerizos</a>
+          <a href="#" class="text-subtitle">Arma el plan para tu mascota</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="introd">
+        <h2 class="introd-title">¿Qué es BARF?</h2>
+        <p class="introd-text">
+          La Dieta B.A.R.F. (acrónimo de Biologically Appropriate Raw Food) es
+          la práctica de alimentar a los perros, gatos y otros animales
+          domésticos una dieta principalmente compuesta de alimentos crudos. En
+          castellano se utiliza el término ACBA que quiere decir “Alimentos
+          Crudos Biológicamente Apropiados” o “Alimentación Cruda Biológicamente
+          Adecuada”. Es decir, se trata de alimentar a los perros y gatos con
+          alimentos crudos biológicamente adecuados a ellos. Basada en la Dieta
+          ancestral de lobos y perros salvaje.
+        </p>
+      </section>
+
+      <section class="info grid">
+        <h2 class="col-full info-title">
+          Todos los beneficios para tu mascota
+        </h2>
+        <div class="info-card col-mid">
+          <div class="info-img bg-gray-400"></div>
+          <p class="info-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet
+            illum reiciendis optio temporibus,
+          </p>
+        </div>
+
+        <div class="info-card col-mid">
+          <div class="info-img bg-gray-400"></div>
+          <p class="info-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet
+            illum reiciendis optio temporibus,
+          </p>
+        </div>
+
+        <div class="info-card col-mid">
+          <div class="info-img bg-gray-400"></div>
+          <p class="info-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet
+            illum reiciendis optio temporibus,
+          </p>
+        </div>
+
+        <div class="info-card col-mid">
+          <div class="info-img bg-gray-400"></div>
+          <p class="info-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere amet
+            illum reiciendis optio temporibus,
+          </p>
+        </div>
+      </section>
+
+      <section class="food">
+        <h2 class="food-title">¿Cómo es la comida de BARF</h2>
+        <div class="food-options">
+          <p class="options-item">1</p>
+          <p class="options-item">2</p>
+          <p class="options-item">3</p>
+          <p class="options-item">4</p>
+        </div>
+        <div id="food-main"></div>
+        <p id="food-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
+          at cum ad reiciendis deserunt eligendi rerum, natus blanditiis
+          quibusdam itaque minima sequi.
+        </p>
+      </section>
+
+      <section class="experience">
+        <h2 class="experience-title">Testimonios</h2>
+        <p class="experience-intro">Nuestros clientes te cuentan su experiencia dando a sus mascotas Chestercan</p>
+        <div class="experience-gallery">
+            <div id="gallery-main" class="bg-gray-400">
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-600 white">
+      <p>Siguenos en nuestras redes</p>
+      <div class="redes">
+        <a><i class="fab fa-facebook-f"></i></a>
+        <a><i class="fab fa-whatsapp"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="../data/testimonials.json"></script>
+    <script src="../js/libraries/jquery-3.5.1.min.js"></script>
+    <script src="../js/libraries/slick/slick.min.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/aboutBarf/dom.js"></script>
+    <script src="../js/aboutBarf/main.js"></script>
+  </body>
+</html>

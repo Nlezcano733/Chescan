@@ -1,35 +1,35 @@
 //--- screens --- //
-$display-xs: 400px;
+$display-xs: 420px;
 $display-sm: 740px;
 $display-md: 960px;
 $display-lg: 1200px;
 
 
 //--- typography --- //
-$text-caption: 14px;
-$text-base: 16px;
-$text-base-lg: 18px;
-$text-subheader: 20px;
-$text-title-sm: 24px;
-$text-title: 28px;
-$text-headline: 34px;
+$text-caption: 12px;
+$text-base: 14px;
+$text-base-lg: 16px;
+$text-subheader: 18px;
+$text-title-sm: 22px;
+$text-title: 26px;
+$text-headline: 30px;
 
-$display-base: 56px;
-$display-big: 72px;
-$display-jumbo: 96px;
+$display-base: 50px;
+$display-big: 64px;
+$display-jumbo: 80px;
 
-@media (max-width: 960px) {
-    $text-caption: 12px;
-    $text-base: 14px;
-    $text-base-lg: 16px;
-    $text-subheader: 18px;
-    $text-title-sm: 22px;
-    $text-title: 26px;
-    $text-headline: 30px;
+@media (min-width: $display-sm) {
+    $text-caption: 14px;
+    $text-base: 16px;
+    $text-base-lg: 18px;
+    $text-subheader: 20px;
+    $text-title-sm: 24px;
+    $text-title: 28px;
+    $text-headline: 34px;
 
-    $display-base: 50px;
-    $display-big: 64px;
-    $display-jumbo: 80px;
+    $display-base: 56px;
+    $display-big: 72px;
+    $display-jumbo: 96px;
 }
 
 //--- colors ---//

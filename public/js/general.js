@@ -1,38 +1,42 @@
 const sidebarOpen = () =>{
     let sidebar = $('.sidebar');
     sidebar.fadeIn();
-    $('footer').fadeOut();
-    $('#main').fadeOut();
 
     $('#sidebar__close').click(sidebarClose);
+    if(outerWidth >= 900){
+        setTimeout(()=>{
+            $('#sidebar__close').css('left', '10%');
+        }, 500);
+    }
 }
 
 const sidebarClose = () =>{
     let sidebar = $('.sidebar');
     sidebar.fadeOut();
-    $('footer').fadeIn();
-    $('#main').fadeIn();
+    if(outerWidth >= 900){
+        setTimeout(()=> {$('#sidebar__close').css('left', '45%');}, 500);
+    }
 }
 
 // --------------------------------------//
 
-const slider = () =>{
-    $('.dogs-gallery').slick({
+const slider = (node) =>{
+    $(node).slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 1,
+        slidesToShow: 3,
         responsive: [
             {
-            breakpoint: 768,
+            breakpoint: 740,
             settings: {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: 2
             }
             },
             {
-            breakpoint: 480,
+            breakpoint: 500,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -43,3 +47,43 @@ const slider = () =>{
         ]
     });
 }
+
+const sliderComplete = (node) =>{
+    $(node).slick();
+}
+
+// --------------------------------------//
+const createNode = (father, tag, attr, attrName, content, i) =>{
+    let newNode, nodeFather;
+    nodeFather = $(father);
+    newNode = document.createElement(tag);
+    textContent = document.createTextNode(content);
+
+    $(newNode).append(textContent);
+    $(newNode).attr(attr, attrName);
+    $(nodeFather[i]).append(newNode);
+}
+
+const createContent = (father, tag, attr, attrName, content, i) =>{
+    let newNode, nodeFather;
+    nodeFather = $(father);
+    newNode = document.createElement(tag);
+    textContent = document.createTextNode(content);
+
+    $(newNode).append(textContent);
+    $(newNode).attr(attr, attrName);
+    $(nodeFather[i]).append(newNode);
+}
+
+const createImage = (father, direction, attr, attrName, i) => {
+    let newNode, nodeFather;
+    nodeFather = $(father);
+    newNode = document.createElement('img');
+
+    $(newNode).attr('src', direction);
+    $(newNode).attr(attr, attrName);
+
+    $(nodeFather[i]).append(newNode)
+}
+
+const modifyImage = (node, direction) => node = $(node).attr('src', direction)

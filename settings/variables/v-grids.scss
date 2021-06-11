@@ -1,33 +1,4 @@
-$display-xs: 400px;
+$display-xs: 420px;
 $display-sm: 740px;
 $display-md: 960px;
 $display-lg: 1200px;
-
-$grid-main: repeat(4, minmax(0, 1fr));
-$grid-gap: 10px;
-$container-padding: 10px;
-$maxwidth: calc(100vw - 30px);
-
-@media (min-width: $display-xs) {
-    $grid-main: repeat(6, minmax(0, 1fr));
-    $grid-gap: 10px;
-    $container-padding: 10px;
-}
-
-@media (min-width: $display-sm) {
-    $grid-main: repeat(8, minmax(0, 1fr));
-    $grid-gap: 15px;
-    $container-padding: 15px;
-}
-
-@media (min-width: $display-md) {
-    $grid-main: repeat(12, minmax(0, 1fr));
-    $grid-gap: 30px;
-    $container-padding: 30px;
-}
-
-@media (min-width: $display-lg){
-    $container-padding: 35px;
-    $grid-gap: 35px;
-    $maxwidth: 1200px;
-}
