@@ -2,7 +2,7 @@
 $display-xs: 420px;
 $display-sm: 740px;
 $display-md: 960px;
-$display-lg: 1200px;
+$display-lg: 1400px;
 
 
 //--- typography --- //
@@ -33,3 +33,22 @@ $display-jumbo: 80px;
 }
 
 //--- colors ---//
+
+$rojo-light: #990b0b27;
+$rojo-normal: #990B0B;
+$rojo-dark: #4a0505;
+
+$azul-light: #303fa127;
+$azul-normal: #303FA1;
+$azul-dark: #111638;
+
+$gris-light: #d9d9d9;
+$gris-normal: #9E9E9E;
+$gris-dark: #494949;
+
+$blanco: #E6E6E6;
+$negro: #282833;
+
+//--- gradientes ---//
+
+$rojo-grad: linear-gradient(0deg, #990b0b 15%, #ba1010 50%, #990b0b 85%)

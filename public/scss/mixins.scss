@@ -8,7 +8,7 @@
     @media (min-width: $display-md){ @content; }
 }
 @mixin desk-lg-screen{
-    @media (min-width: $display-md){ @content; }
+    @media (min-width: $display-lg){ @content; }
 }
 
 // -------------------------------------- //

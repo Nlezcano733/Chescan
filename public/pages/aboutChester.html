@@ -12,14 +12,12 @@
     ></script>
     <title>Document</title>
   </head>
-  <body>
-    <header class="bg-gray-600 white">
+  <body class="wrapped">
+    <header>
       <div class="navbar container">
         <a id="navbar__menu"><i class="fas fa-bars"></i></a>
-        <h1 class="navbar__title">Sobre Chester</h2>
-        <a href="https://placeholder.com" id="navbar__logo"
-          ><img src="https://via.placeholder.com/60"
-        /></a>
+        <h2 class="navbar__title">Sobre Chester</h2>
+        <img src="../assets/logo.jpg" alt="Chester" id="navbar__logo"/>
       </div>
       <div class="sidebar container">
         <div class="sidebar__nav bg-gray-600 white">
@@ -48,29 +46,29 @@
         <h3 class="product-title text-center">Chester clásico de pollo</h3>
 
         <div class="product-options">
-          <button class="option option-selected" id="clasicoDesc" >Descripción</button>
-          <button class="option" id="clasicoIngred" >Ingredientes</button>
+          <button class="option option-selected option-red" id="clasicoDesc" >Descripción</button>
+          <button class="option option-red" id="clasicoIngred" >Ingredientes</button>
         </div>
 
         <p class="product-text" id="classicText">
             Esta parte de la descripcion sera una prueba en español mas que nada para
             diferenciarnos de los ingredientes y notar una diferencia a la hora de cambiar
         </p>
-        <button class="btn product-submit">Comprar</button>
+        <button class="btn product-submit btn-red">Comprar</button>
       </article>
 
       <article class="product col-mid">
         <div class="product-img bg-gray-300"></div>
         <h3 class="product-title text-center">Chester hipoalergénico de pavo</h3>
         <div class="product-options">
-          <p class="option option-selected" id="pavoDesc">Descripción</p>
-          <p class="option" id="pavoIngred">Ingredientes</p>
+          <p class="option option-selected option-blue" id="pavoDesc">Descripción</p>
+          <p class="option option-blue" id="pavoIngred">Ingredientes</p>
         </div>
         <p class="product-text" id="pavoText">
             Prueba de descripcion que debera ser en españo para diferenciarse un  poco
             de los ingredientes que son en ingles para notar una diferencia en el cambio
         </p>
-        <button class="btn product-submit">Comprar</button>
+        <button class="btn product-submit btn-blue">Comprar</button>
       </article>
         <div class="information col-mid">
             <h3 class="information-title">Como se sirven</h3>
@@ -88,7 +86,7 @@
         </div>
     </main>
 
-    <footer class="bg-gray-600 white">
+    <footer>
       <p>Siguenos en nuestras redes</p>
       <div class="redes">
         <a><i class="fab fa-facebook-f"></i></a>

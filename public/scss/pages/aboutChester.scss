@@ -18,24 +18,39 @@
             padding: 10px 0px;
             margin: 10px 0px;
             background-color: white;
-            border: 1px solid #ccc;
+            border: 1px solid $gris-light;
             font-weight: 500;
             text-align: center;
             font-size: $text-base-lg;
             z-index: 1;
 
-            &-selected{
-                border-bottom: 2px solid #333;
+            &-selected:nth-of-type(1){
+                border: 1px solid $rojo-light;
+                border-bottom: 2px solid $rojo-dark;
             }
+
+            &-selected:nth-of-type(2){
+                border: 1px solid $azul-light;
+                border-bottom: 2px solid $azul-normal;
+            }
+
         }
     }
     &-submit{
-        @include boton (120px, 45px, #999, #444);
         align-self: center;
         margin: 10px;
         font-size: $text-base-lg;
     }
+    
+    .btn-red{
+        @include boton (120px, 45px, $rojo-normal, $rojo-dark);
+    }
+
+    .btn-blue{
+        @include boton (120px, 45px, $azul-normal, $azul-dark);
+    }
 }
+
 
 .information{
     margin-top: 10px;
@@ -62,7 +77,6 @@
         }
 
         &-submit{
-            @include boton (130px, 50px, #999, #444);
             margin: 20px;
         }
     }

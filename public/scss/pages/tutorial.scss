@@ -32,7 +32,7 @@
         width: 100%;
         height: 5px;
         margin: 20px 0px;
-        background-color: #ccc;
+        background-color: $azul-normal;
     }
 
     &-dot{
@@ -41,7 +41,7 @@
         height: 20px;
         width: 20px;
         border-radius: 20px;
-        background-color: #bbb;
+        background-color: $azul-normal;
     }
 
     #dot-1{ left: 2%; }
@@ -70,7 +70,7 @@
             font-size: $text-base;
             line-height: 45px;
             margin: 0 auto;
-            @include boton (100px, 50px, #ccc, #bbb);
+            @include boton (100px, 50px, $azul-normal, $azul-dark);
         }
     }
 }
@@ -148,8 +148,10 @@
 }
 
 @include desk-screen {
+    step{
+        height: fit-content;
+    }
     .step-container{
-        height: calc(100vh - (100px + 69px));
         max-width: 850px;
         padding-left: 100px;
         padding-right: 100px;

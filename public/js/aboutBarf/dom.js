@@ -24,11 +24,19 @@ const selectFoodImage = (img, text, mainImg, mainText) =>{
         btn = $('.options-item');
         btn = btn[i];
 
-        $(btn).click(()=>{
+        $(btn).click((e)=>{
+            selectedBtn(e)
             modifyImage(mainImg, img[i])
             $(mainText).text(text[i])
         })
     }
+}
+
+const selectedBtn = ({target}) => {
+    console.log(target)
+    let btn = target;
+    $('.food-options p').attr('class', 'options-item');
+    $(btn).attr('class', 'options-item selected');
 }
 
 

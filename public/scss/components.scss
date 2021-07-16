@@ -13,6 +13,9 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1000;
+    background-color: $rojo-normal;
+    background-image: $rojo-grad;
+    color: $blanco;
 }
 
 .navbar{
@@ -33,6 +36,11 @@ header{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        height: 60px;
+    }
+
+    #navbar__logo{
+        height: 60px;
     }
 }
 
@@ -57,6 +65,9 @@ header{
         width: 100%;
         padding: 0px 16px;
         @include flex (row, flex-end, center);
+        background-color: $rojo-normal;
+        background-image: $rojo-grad;
+        color: $blanco;
 
         #sidebar__close{
             position: absolute;
@@ -87,6 +98,7 @@ header{
         }
     }
 }
+
 main{
     margin: 0px;
     overflow-x: hidden;
@@ -105,6 +117,9 @@ footer{
     width: 100%;
     padding: 0px 16px;
     z-index: 10;
+    background-color: $rojo-normal;
+    background-image: $rojo-grad;
+    color: $blanco;
 }
 
 .btn{
@@ -133,11 +148,8 @@ footer{
         top: 0px;
         height: 64px;
 
-        #navbar__logo{
-            height: 100px;
-            width: 100px;
+        #navbar__mainLogo{
             position: absolute;
-            top: 0px;
             left: 50%;
             transform: translateX(-50%);
         }

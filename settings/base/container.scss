@@ -1,6 +1,14 @@
 body{
   display: block;
 }
+
+.wrapped {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px auto 60px;
+  grid-template-columns: 1fr;
+}
+
 $grid-main: repeat(4, minmax(0, 1fr));
 $maxwidth: 100%;
 
@@ -25,6 +33,7 @@ $maxwidth: 100%;
 
 @media (min-width: $display-xs){
   .container{
+    max-width: 660px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -32,11 +41,19 @@ $maxwidth: 100%;
 
 @media (min-width: $display-sm){
   .container{
+    max-width: 760px;
     padding-left: 25px;
     padding-right: 25px;
   }
 }
 @media (min-width: $display-md){
+  .wrapped {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 64px auto 63px;
+    grid-template-columns: 1fr;
+  }
+
   .container{
     max-width: 1020px;
     padding-left: 30px;
